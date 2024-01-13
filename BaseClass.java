@@ -158,6 +158,7 @@ public class BaseClass {
 		}
 		public static void javaScript(){
 		javaScriptExecutor js=new javaScriptExecutor();
+			js.Execute();
 		}
 	
 	
