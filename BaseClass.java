@@ -160,6 +160,15 @@ public class BaseClass {
 		javaScriptExecutor js=new javaScriptExecutor();
 			js.Execute();
 		}
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].setAttribute('value','Madhumitha')",txtEmail);
+		js.executeScript("arguments[0].setAttribute('value','123456')", txtpass);
+		
+		Object ob=js.executeScript("return arguments[0].getAttribute('value')",txtEmail );
+		String s1=(String)ob;
+		System.out.println(s1);
+		
+		js.executeScript("arguments[0].scrollIntoView('True')", linkhelp);
 	
 	
 
