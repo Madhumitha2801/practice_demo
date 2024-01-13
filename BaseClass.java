@@ -171,5 +171,5 @@ public class BaseClass {
 		js.executeScript("arguments[0].scrollIntoView('True')", linkhelp);
 	
 	// feature 1 added
-	// feature 12 added
+	// feature 123 added
 }
